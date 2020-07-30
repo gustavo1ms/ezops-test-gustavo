@@ -43,13 +43,13 @@
     }
 
     function getMessages(){
-      $.get('http://192.168.0.33:3000/messages', (data) => {
+      $.get('http://3.128.155.162:3000/messages', (data) => {
         data.forEach(addMessages);
       })
     }
 
     function sendMessage(message){
-      $.post('http://192.168.0.33:3000/messages', message)
+      $.post('http://3.128.155.162:3000/messages', message)
     }
 </script>
 </body>
